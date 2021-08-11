@@ -1,12 +1,12 @@
 api = "0.5"
 
 [buildpack]
-id = "ForestEckhardt/source-removal"
-name = "Source Removal Buildpack"
+  id = "ForestEckhardt/source-removal"
+  name = "Source Removal Buildpack"
 
 [metadata]
-include-files = ["bin/run", "bin/build","bin/detect","buildpack.toml"]
-pre-package = "./scripts/build.sh"
+  include-files = ["bin/run", "bin/build", "bin/detect", "buildpack.toml"]
+  pre-package = "./scripts/build.sh"
 
 [[stacks]]
-id = "*"
+  id = "*"
