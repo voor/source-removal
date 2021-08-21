@@ -1,7 +1,7 @@
 api = "0.5"
 
 [buildpack]
-id = "ForestEckhardt/source-removal"
+id = "foresteckhardt/source-removal"
 name = "Source Removal Buildpack"
 
 [metadata]
@@ -9,4 +9,4 @@ include-files = ["bin/run", "bin/build","bin/detect","buildpack.toml"]
 pre-package = "./scripts/build.sh"
 
 [[stacks]]
-id = "*"
+id = "io.buildpacks.stacks.bionic"
